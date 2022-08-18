@@ -5,7 +5,10 @@
         "pattern":"\\QMETA-INF/services/com.diozero.internal.spi.BoardInfoProvider\\E"
       },
       {
-        "pattern":"\\QMETA-INF/services/com.diozero.internal.spi.NativeDeviceFactoryInterface\\E"
+        "pattern":"\\QMETA-INF/services/io.smallrye.config.SmallRyeConfigFactory\\E"
+      },
+      {
+        "pattern":"\\QMETA-INF/services/org.eclipse.microprofile.config.spi.Converter\\E"
       },
       {
         "pattern":"\\QMETA-INF/services/org.tinylog.configuration.ConfigurationLoader\\E"
@@ -17,22 +20,25 @@
         "pattern":"\\QMETA-INF/services/org.tinylog.writers.Writer\\E"
       },
       {
-        "pattern":"boarddefs/.*\\.txt$"
-      },
-      {
         "pattern":"\\Qapplication.properties\\E"
       },
       {
-        "pattern":"lib/.*/.*$"
+        "pattern":"\\Qboarddefs/raspberrypi.txt\\E"
       },
       {
-        "pattern":"\\Qlib/.*/.*\\E"
+        "pattern":"\\Qlib/linux-aarch64/libdiozero-system-utils.so\\E"
+      },
+      {
+        "pattern":"\\Qorg/jboss/threads/Version.properties\\E"
+      },
+      {
+        "pattern":"\\Qorg/slf4j/impl/StaticLoggerBinder.class\\E"
+      },
+      {
+        "pattern":"\\Qquarkus-runtime-config-defaults.properties\\E"
       },
       {
         "pattern":"\\Qtinylog.properties\\E"
-      },
-      {
-        "pattern":"\\Qmock-board-info.properties\\E"
       }
     ]},
   "bundles":[]

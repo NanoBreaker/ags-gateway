@@ -16,7 +16,6 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <maven.compiler.parameters>true</maven.compiler.parameters>
-
         <diozero.version>1.3.3</diozero.version>
     </properties>
 
@@ -104,7 +103,7 @@
                 <quarkus.native.debug.enabled>true</quarkus.native.debug.enabled>
                 <quarkus.native.full-stack-traces>true</quarkus.native.full-stack-traces>
                 <quarkus.native.enable-reports>true</quarkus.native.enable-reports>
-                <quarkus.native.resources.includes>*.json, *.txt, *.properties</quarkus.native.resources.includes>
+                <quarkus.native.resources.includes>*.json, *.txt, *.properties, *.so</quarkus.native.resources.includes>
                 <quarkus.native.additional-build-args>
                     -H:ResourceConfigurationFiles=resource-config.json,
                     -H:ReflectionConfigurationFiles=reflect-config.json,
