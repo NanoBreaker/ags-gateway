@@ -1,45 +1,49 @@
 {
-  "resources":{
-    "includes":[
+  "resources": {
+    "includes": [
       {
-        "pattern":"\\QMETA-INF/services/com.diozero.internal.spi.BoardInfoProvider\\E"
+        "pattern": "\\QMETA-INF/services/com.diozero.internal.spi.BoardInfoProvider\\E"
       },
       {
-        "pattern":"\\QMETA-INF/services/io.smallrye.config.SmallRyeConfigFactory\\E"
+        "pattern": "\\Qcom/diozero/internal/board/allwinner/AllwinnerH5BoardInfoProvider.class\\E"
       },
       {
-        "pattern":"\\QMETA-INF/services/org.eclipse.microprofile.config.spi.Converter\\E"
+        "pattern": "\\Qorg/slf4j/impl/StaticLoggerBinder.class\\E"
       },
       {
-        "pattern":"\\QMETA-INF/services/org.tinylog.configuration.ConfigurationLoader\\E"
+        "pattern": "\\QMETA-INF/services/io.smallrye.config.SmallRyeConfigFactory\\E"
       },
       {
-        "pattern":"\\QMETA-INF/services/org.tinylog.provider.LoggingProvider\\E"
+        "pattern": "\\QMETA-INF/services/org.eclipse.microprofile.config.spi.Converter\\E"
       },
       {
-        "pattern":"\\QMETA-INF/services/org.tinylog.writers.Writer\\E"
+        "pattern": "\\QMETA-INF/services/org.tinylog.configuration.ConfigurationLoader\\E"
       },
       {
-        "pattern":"\\Qapplication.properties\\E"
+        "pattern": "\\QMETA-INF/services/org.tinylog.provider.LoggingProvider\\E"
       },
       {
-        "pattern":"\\Qboarddefs/raspberrypi.txt\\E"
+        "pattern": "\\QMETA-INF/services/org.tinylog.writers.Writer\\E"
       },
       {
-        "pattern":"\\Qlib/linux-aarch64/libdiozero-system-utils.so\\E"
+        "pattern": "\\Qapplication.properties\\E"
       },
       {
-        "pattern":"\\Qorg/jboss/threads/Version.properties\\E"
+        "pattern": "\\Qorg/jboss/threads/Version.properties\\E"
       },
       {
-        "pattern":"\\Qorg/slf4j/impl/StaticLoggerBinder.class\\E"
+        "pattern": "\\Qquarkus-runtime-config-defaults.properties\\E"
       },
       {
-        "pattern":"\\Qquarkus-runtime-config-defaults.properties\\E"
+        "pattern": "\\Qtinylog.properties\\E"
       },
       {
-        "pattern":"\\Qtinylog.properties\\E"
+        "pattern":"^boarddefs/.*\\.txt$"
+      },
+      {
+        "pattern":"^lib/.*/.*\\.(so|dll|dylib)$"
       }
-    ]},
-  "bundles":[]
+    ]
+  },
+  "bundles": []
 }

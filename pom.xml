@@ -100,15 +100,12 @@
             </activation>
             <properties>
                 <quarkus.package.type>native</quarkus.package.type>
-                <quarkus.native.debug.enabled>true</quarkus.native.debug.enabled>
-                <quarkus.native.full-stack-traces>true</quarkus.native.full-stack-traces>
-                <quarkus.native.enable-reports>true</quarkus.native.enable-reports>
-                <quarkus.native.resources.includes>*.json, *.txt, *.properties, *.so</quarkus.native.resources.includes>
+                <quarkus.native.resources.includes>*.json, *.txt, *.properties</quarkus.native.resources.includes>
                 <quarkus.native.additional-build-args>
                     -H:ResourceConfigurationFiles=resource-config.json,
                     -H:ReflectionConfigurationFiles=reflect-config.json,
                     -H:JNIConfigurationFiles=jni-config.json,
-                    -H:+PrintClassInitialization
+                    --initialize-at-run-time=com.diozero.util\,com.diozero.sbc
                 </quarkus.native.additional-build-args>
             </properties>
             <build>
